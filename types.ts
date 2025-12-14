@@ -65,7 +65,7 @@ export interface Member {
   bio: string;
   image: string;
   linkedin?: string;
-  github?: string;
+  instagram?: string;
 }
 
 export interface Project {
