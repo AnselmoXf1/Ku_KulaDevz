@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📧 Preview - Layout do Email</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; margin: 0; padding: 20px; background: #f0f0f0; }
+        .preview-container { max-width: 800px; margin: 0 auto; background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .preview-header { background: #2d3748; color: white; padding: 20px; text-align: center; }
+        .preview-content { padding: 0; }
+        
+        /* Email Styles */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .email-body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #2d3748; background: #f7fafc; }
+        .email-container { max-width: 650px; margin: 0 auto; background: white; }
+        .header { background: linear-gradient(135deg, #00A651 0%, #38a169 50%, #00d463 100%); color: white; padding: 40px 30px; position: relative; overflow: hidden; }
+        .header::before { content: ''; position: absolute; top: -50%; right: -50%; width: 200%; height: 200%; background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="white" opacity="0.1"/></svg>') repeat; animation: float 20s infinite linear; }
+        .header-content { position: relative; z-index: 2; text-align: center; }
+        .header h1 { font-size: 28px; font-weight: 800; margin-bottom: 8px; text-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .header p { opacity: 0.95; font-size: 16px; font-weight: 500; }
+        .priority-badge { display: inline-block; background: #38a169; color: white; padding: 6px 16px; border-radius: 20px; font-size: 12px; font-weight: 700; margin: 20px 0 10px; text-transform: uppercase; }
+        .content { padding: 40px 30px; }
+        .message-id { text-align: center; color: #718096; font-size: 12px; font-family: monospace; margin-bottom: 30px; background: #f7fafc; padding: 8px; border-radius: 6px; }
+        .info-section { background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%); border-radius: 12px; padding: 25px; margin: 25px 0; border-left: 5px solid #00A651; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .info-title { color: #00A651; font-size: 18px; font-weight: 700; margin-bottom: 20px; display: flex; align-items: center; }
+        .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+        .info-item { background: white; padding: 15px; border-radius: 8px; border: 1px solid #e2e8f0; }
+        .info-label { font-size: 12px; color: #718096; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 5px; }
+        .info-value { font-size: 14px; color: #2d3748; font-weight: 600; }
+        .message-section { background: white; border: 2px solid #e2e8f0; border-radius: 12px; padding: 25px; margin: 25px 0; position: relative; }
+        .message-section::before { content: '💬'; position: absolute; top: -15px; left: 20px; background: white; padding: 0 10px; font-size: 20px; }
+        .message-title { color: #2d3748; font-size: 16px; font-weight: 700; margin-bottom: 15px; }
+        .message-content { color: #4a5568; line-height: 1.8; white-space: pre-wrap; font-size: 15px; }
+        .action-buttons { text-align: center; margin: 30px 0; }
+        .btn { display: inline-block; padding: 14px 28px; margin: 0 10px; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 14px; transition: all 0.3s ease; }
+        .btn-primary { background: linear-gradient(135deg, #00A651, #38a169); color: white; box-shadow: 0 4px 15px rgba(0, 166, 81, 0.3); }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0, 166, 81, 0.4); }
+        .btn-secondary { background: #edf2f7; color: #4a5568; border: 2px solid #e2e8f0; }
+        .stats-section { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin: 25px 0; }
+        .stat-item { text-align: center; background: #f7fafc; padding: 20px; border-radius: 10px; border: 1px solid #e2e8f0; }
+        .stat-number { font-size: 24px; font-weight: 800; color: #00A651; }
+        .stat-label { font-size: 12px; color: #718096; text-transform: uppercase; font-weight: 600; }
+        .footer { background: #2d3748; color: #a0aec0; padding: 30px; text-align: center; }
+        .footer-logo { font-size: 20px; font-weight: 800; color: #00A651; margin-bottom: 15px; }
+        .footer p { font-size: 13px; margin-bottom: 8px; }
+        .footer-links { margin-top: 20px; }
+        .footer-links a { color: #00A651; text-decoration: none; margin: 0 15px; font-weight: 500; }
+        @keyframes float { 0% { transform: translateX(-100%); } 100% { transform: translateX(100%); } }
+    </style>
+</head>
+<body>
+    <div class="preview-container">
+        <div class="preview-header">
+            <h2>📧 Preview do Novo Layout de Email</h2>
+            <p>Assim ficará o email que você receberá no Gmail</p>
+        </div>
+        
+        <div class="preview-content">
+            <div class="email-body">
+                <div class="email-container">
+                    <!-- Header -->
+                    <div class="header">
+                        <div class="header-content">
+                            <h1>📧 Nova Mensagem Recebida</h1>
+                            <p>Ku Kula Devz - Soluções Digitais Inovadoras</p>
+                            <div class="priority-badge">Prioridade: NORMAL</div>
+                        </div>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="content">
+                        <!-- Message ID -->
+                        <div class="message-id">
+                            ID da Mensagem: MSG-1702478425-abc123def
+                        </div>
+
+                        <!-- Sender Information -->
+                        <div class="info-section">
+                            <div class="info-title">
+                                👤 Informações do Remetente
+                            </div>
+                            <div class="info-grid">
+                                <div class="info-item">
+                                    <div class="info-label">Nome Completo</div>
+                                    <div class="info-value">Maria Silva Santos</div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-label">Email de Contato</div>
+                                    <div class="info-value">maria.silva@empresa.com</div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-label">Assunto</div>
+                                    <div class="info-value">Interesse em Parceria Tecnológica</div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-label">Data e Hora</div>
+                                    <div class="info-value">Quarta-feira, 13 de dezembro de 2024 às 15:30</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Message Content -->
+                        <div class="message-section">
+                            <div class="message-title">Conteúdo da Mensagem</div>
+                            <div class="message-content">Olá equipe da Ku Kula Devz!
+
+Espero que estejam bem. Sou Maria Silva, representante da TechSolutions Moçambique, e gostaria de explorar uma possível parceria com vocês.
+
+Ficamos impressionados com o projeto IAGROMOZ e acreditamos que podemos colaborar para expandir o impacto dessa solução no setor agrícola.
+
+Gostaríamos de agendar uma reunião para discutir:
+- Oportunidades de colaboração técnica
+- Investimento em novos projetos
+- Mentoria para a equipe
+
+Aguardo retorno para agendarmos uma conversa.
+
+Atenciosamente,
+Maria Silva</div>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="action-buttons">
+                            <a href="#" class="btn btn-primary">
+                                📧 Responder Agora
+                            </a>
+                            <a href="#" class="btn btn-secondary">
+                                ✉️ Novo Email
+                            </a>
+                        </div>
+
+                        <!-- Quick Stats -->
+                        <div class="stats-section">
+                            <div class="stat-item">
+                                <div class="stat-number">487</div>
+                                <div class="stat-label">Caracteres</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">89</div>
+                                <div class="stat-label">Palavras</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">NORMAL</div>
+                                <div class="stat-label">Prioridade</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Footer -->
+                    <div class="footer">
+                        <div class="footer-logo">KU KULA DEVZ</div>
+                        <p><strong>📧 Enviado através do formulário de contato do site</strong></p>
+                        <p>🔒 Mensagem enviada de forma segura e criptografada</p>
+                        <p>🌐 kukuladevz.com - Tecnologia que Transforma Moçambique</p>
+                        
+                        <div class="footer-links">
+                            <a href="#">Responder</a>
+                            <a href="#">Visitar Site</a>
+                            <a href="#">Contato Direto</a>
+                        </div>
+                        
+                        <p style="margin-top: 20px; font-size: 11px; opacity: 0.7;">
+                            Este email foi gerado automaticamente pelo sistema de contato da Ku Kula Devz.<br>
+                            Para responder, use os botões acima ou responda diretamente a este email.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
