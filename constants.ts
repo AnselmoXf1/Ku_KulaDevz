@@ -152,7 +152,7 @@ export const teamMembers: Member[] = [
     year: "2º Ano",
     role: "Back-end",
     bio: "O motor por trás das nossas aplicações, lidando com dados complexos.",
-    image: "/images/team/EdsonGuambe.jpg",
+    image: "/images/team/Edson-Crimildo-Guambe.jpg",
   },
   {
     name: "Edilson Ricardo Cuamba",
