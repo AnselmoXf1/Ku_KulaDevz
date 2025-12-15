@@ -123,7 +123,7 @@ export const teamMembers: Member[] = [
     year: "2º Ano",
     role: "Programador Sênior / Segurança / Web",
     bio: "Especialista em segurança da informação e arquitetura web robusta.",
-    image: "/images/team/anselmoDora.jpg",
+    image: "/images/team/anselmoDora.webp",
     linkedin: "https://mz.linkedin.com/in/anselmo-dora-bistiro-gulane-a68505390",
     instagram: "https://www.instagram.com/anselmo.offcial_/",
     imageStyle: {
@@ -136,7 +136,7 @@ export const teamMembers: Member[] = [
     year: "2º Ano",
     role: "Desenvolvimento Web",
     bio: "Focado em criar experiências web modernas e responsivas.",
-    image: "/images/team/andre-augusto.jpg",
+    image: "/images/team/andre-augusto.webp",
     imageStyle: {
       objectPosition: 'center -40%',
       transform: 'scale(1.5)'
@@ -147,7 +147,7 @@ export const teamMembers: Member[] = [
     year: "3º Ano",
     role: "Front-end / Mobile",
     bio: "Paixão por UI/UX e desenvolvimento de aplicações móveis intuitivas.",
-    image: "/images/team/anselma-tiburcio.jpg",
+    image: "/images/team/anselma-tiburcio.webp",
     linkedin: "https://mz.linkedin.com/in/anselma-tiburcio-73165930b",
     instagram: "https://www.instagram.com/anselmatiburcio/",
     imageStyle: {
@@ -160,7 +160,7 @@ export const teamMembers: Member[] = [
     year: "3º Ano",
     role: "Redes / Infraestrutura",
     bio: "Garante que nossas soluções estejam sempre conectadas e seguras.",
-    image: "/images/team/aquiliviomaria.jpg",
+    image: "/images/team/aquiliviomaria.webp",
     linkedin: "https://linkedin.com/in/aquilivio-maria",
     instagram: "https://instagram.com/aquilivio.maria"
   },
@@ -170,7 +170,7 @@ export const teamMembers: Member[] = [
     year: "2º Ano",
     role: "Back-end",
     bio: "O motor por trás das nossas aplicações, lidando com dados complexos.",
-    image: "/images/team/edsonGuambe.jpg",
+    image: "/images/team/edsonGuambe.webp",
     linkedin: "https://linkedin.com/in/edson-crimilido",
     instagram: "https://instagram.com/edson.crimilido",
   },
@@ -179,7 +179,7 @@ export const teamMembers: Member[] = [
     year: "2º Ano",
     role: "Mobile / Web",
     bio: "Versátil em plataformas cruzadas, unindo web e mobile.",
-    image: "/images/team/edilson-ricardo.jpg",
+    image: "/images/team/edilson-ricardo.webp",
     imageStyle: {
       objectPosition: 'center 25%',
       transform: 'scale(1.3)'
@@ -190,7 +190,7 @@ export const teamMembers: Member[] = [
     year: "2º Ano",
     role: "Algoritmos / Lógica",
     bio: "Resolve problemas complexos com lógica eficiente e limpa.",
-    image: "/images/team/isidro-guimba.jpg",
+    image: "/images/team/isidro-guimba.webp",
     imageStyle: {
       objectPosition: 'center 25%',
       transform: 'scale(1.3)'
@@ -201,7 +201,7 @@ export const teamMembers: Member[] = [
     year: "2º Ano",
     role: "Desenvolvimento de Sistemas",
     bio: "Focado na arquitetura geral e integração de sistemas.",
-    image: "/images/team/shelton-crimildo.jpg",
+    image: "/images/team/shelton-crimildo.webp",
     imageStyle: {
       objectPosition: '-20% -30%',
       transform: 'scale(1.5)'
