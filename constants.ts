@@ -146,6 +146,7 @@ export const teamMembers: Member[] = [
     bio: "Garante que nossas soluções estejam sempre conectadas e seguras.",
     image: "/images/team/aquilivio-maria.jpg",
   },
+  
   {
     name: "Edson Crimilido",
     year: "2º Ano",
