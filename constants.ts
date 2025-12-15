@@ -124,8 +124,6 @@ export const teamMembers: Member[] = [
     role: "Programador Sênior / Segurança / Web",
     bio: "Especialista em segurança da informação e arquitetura web robusta.",
     image: "/images/team/anselmoDora.jpg",
-    linkedin: "https://mz.linkedin.com/in/anselmo-dora-bistiro-gulane-a68505390",
-    instagram: "https://www.instagram.com/anselmo.offcial_/",
   },
   {
     name: "André Augusto Júnior",
@@ -153,7 +151,7 @@ export const teamMembers: Member[] = [
     year: "2º Ano",
     role: "Back-end",
     bio: "O motor por trás das nossas aplicações, lidando com dados complexos.",
-    image: "/images/team/edson-crimilido.jpg",
+    image: "/images/team/EdsonGuambe.jpg",
   },
   {
     name: "Edilson Ricardo Cuamba",

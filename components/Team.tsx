@@ -60,26 +60,22 @@ const Team: React.FC<TeamProps> = ({ t, members }) => {
                 <p className="text-gray-500 text-xs mb-4 line-clamp-2">{member.bio}</p>
                 
                 <div className="flex justify-center gap-3">
-                  {member.linkedin && (
-                    <a 
-                      href={member.linkedin} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="text-gray-400 hover:text-brand-green transition-colors"
-                    >
-                      <Linkedin size={18} />
-                    </a>
-                  )}
-                  {member.instagram && (
-                    <a 
-                      href={member.instagram} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="text-gray-400 hover:text-brand-green transition-colors"
-                    >
-                      <Instagram size={18} />
-                    </a>
-                  )}
+                  <a 
+                    href={member.linkedin || "#"} 
+                    target={member.linkedin ? "_blank" : "_self"}
+                    rel={member.linkedin ? "noopener noreferrer" : ""}
+                    className="text-gray-400 hover:text-brand-green transition-colors"
+                  >
+                    <Linkedin size={18} />
+                  </a>
+                  <a 
+                    href={member.instagram || "#"} 
+                    target={member.instagram ? "_blank" : "_self"}
+                    rel={member.instagram ? "noopener noreferrer" : ""}
+                    className="text-gray-400 hover:text-brand-green transition-colors"
+                  >
+                    <Instagram size={18} />
+                  </a>
                 </div>
               </div>
             </motion.div>
