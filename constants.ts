@@ -124,13 +124,23 @@ export const teamMembers: Member[] = [
     role: "Programador Sênior / Segurança / Web",
     bio: "Especialista em segurança da informação e arquitetura web robusta.",
     image: "/images/team/anselmoDora.jpg",
+    linkedin: "https://mz.linkedin.com/in/anselmo-dora-bistiro-gulane-a68505390",
+    instagram: "https://www.instagram.com/anselmo.offcial_/",
+    imageStyle: {
+      objectPosition: 'center 35%',
+      transform: 'scale(1.2)'
+    }
   },
   {
     name: "André Augusto Júnior",
     year: "2º Ano",
     role: "Desenvolvimento Web",
     bio: "Focado em criar experiências web modernas e responsivas.",
-    image: "/images/team/andre-augusto-junior.jpg",
+    image: "/images/team/andre-augusto.jpg",
+    imageStyle: {
+      objectPosition: 'center -40%',
+      transform: 'scale(1.5)'
+    }
   },
   {
     name: "Anselma Tiburcio",
@@ -138,6 +148,12 @@ export const teamMembers: Member[] = [
     role: "Front-end / Mobile",
     bio: "Paixão por UI/UX e desenvolvimento de aplicações móveis intuitivas.",
     image: "/images/team/anselma-tiburcio.jpg",
+    linkedin: "https://mz.linkedin.com/in/anselma-tiburcio-73165930b",
+    instagram: "https://www.instagram.com/anselmatiburcio/",
+    imageStyle: {
+      objectPosition: 'center -40%',
+      transform: 'scale(1.5)'
+    }
   },
   {
     name: "Aquilivio Maria",
@@ -145,6 +161,10 @@ export const teamMembers: Member[] = [
     role: "Redes / Infraestrutura",
     bio: "Garante que nossas soluções estejam sempre conectadas e seguras.",
     image: "/images/team/aquilivio-maria.jpg",
+    linkedin: "https://linkedin.com/in/aquilivio-maria",
+    instagram: "https://instagram.com/aquilivio.maria",
+ 
+
   },
   {
     name: "Edson Crimilido",
@@ -152,27 +172,41 @@ export const teamMembers: Member[] = [
     role: "Back-end",
     bio: "O motor por trás das nossas aplicações, lidando com dados complexos.",
     image: "/images/team/EdsonGuambe.jpg",
+    linkedin: "https://linkedin.com/in/edson-crimilido",
+    instagram: "https://instagram.com/edson.crimilido",
   },
   {
     name: "Edilson Ricardo Cuamba",
     year: "2º Ano",
     role: "Mobile / Web",
     bio: "Versátil em plataformas cruzadas, unindo web e mobile.",
-    image: "/images/team/edilson-ricardo-cuamba.jpg",
+    image: "/images/team/edilson-ricardo.jpg",
+    imageStyle: {
+      objectPosition: 'center 10%',
+      transform: 'scale(1.0)'
+    }
   },
   {
     name: "Isidro Helder Guiamba",
     year: "2º Ano",
     role: "Algoritmos / Lógica",
     bio: "Resolve problemas complexos com lógica eficiente e limpa.",
-    image: "/images/team/isidro-helder-guiamba.jpg",
+    image: "/images/team/isidro-guimba.jpg",
+    imageStyle: {
+      objectPosition: 'center 25%',
+      transform: 'scale(2.3)'
+    }
   },
   {
     name: "Shelton Tomas",
     year: "2º Ano",
     role: "Desenvolvimento de Sistemas",
     bio: "Focado na arquitetura geral e integração de sistemas.",
-    image: "/images/team/shelton-tomas.jpg",
+    image: "/images/team/shelton-crimildo.jpg",
+    imageStyle: {
+      objectPosition: '-20% -50%',
+      transform: 'scale(1.5)'
+    }
   }
 ];
 

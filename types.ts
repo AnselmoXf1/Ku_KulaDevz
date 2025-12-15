@@ -66,6 +66,10 @@ export interface Member {
   image: string;
   linkedin?: string;
   instagram?: string;
+  imageStyle?: {
+    objectPosition?: string;
+    transform?: string;
+  };
 }
 
 export interface Project {
