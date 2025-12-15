@@ -403,8 +403,8 @@ const Contact: React.FC<ContactProps> = ({ t }) => {
           </p>
           
           <div className="flex gap-6">
-            <a href="#" className="text-gray-500 hover:text-brand-green transition-colors text-sm font-medium">Privacidade</a>
-            <a href="#" className="text-gray-500 hover:text-brand-green transition-colors text-sm font-medium">Termos</a>
+            <a href="/privacidade.html" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-brand-green transition-colors text-sm font-medium">Privacidade</a>
+            <a href="/termos.html" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-brand-green transition-colors text-sm font-medium">Termos</a>
           </div>
         </motion.div>
       </div>
