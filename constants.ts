@@ -160,7 +160,7 @@ export const teamMembers: Member[] = [
     year: "3º Ano",
     role: "Redes / Infraestrutura",
     bio: "Garante que nossas soluções estejam sempre conectadas e seguras.",
-    image: "/images/team/aquilivio-maria.jpg",
+    image: "/images/team/aquiliviomaria.jpg",
     linkedin: "https://linkedin.com/in/aquilivio-maria",
     instagram: "https://instagram.com/aquilivio.maria"
   },
@@ -170,7 +170,7 @@ export const teamMembers: Member[] = [
     year: "2º Ano",
     role: "Back-end",
     bio: "O motor por trás das nossas aplicações, lidando com dados complexos.",
-    image: "/images/team/EdsonGuambe.jpg",
+    image: "/images/team/edsonGuambe.jpg",
     linkedin: "https://linkedin.com/in/edson-crimilido",
     instagram: "https://instagram.com/edson.crimilido",
   },
