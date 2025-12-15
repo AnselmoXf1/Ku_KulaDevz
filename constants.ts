@@ -162,10 +162,9 @@ export const teamMembers: Member[] = [
     bio: "Garante que nossas soluções estejam sempre conectadas e seguras.",
     image: "/images/team/aquilivio-maria.jpg",
     linkedin: "https://linkedin.com/in/aquilivio-maria",
-    instagram: "https://instagram.com/aquilivio.maria",
- 
-
+    instagram: "https://instagram.com/aquilivio.maria"
   },
+  
   {
     name: "Edson Crimilido",
     year: "2º Ano",
@@ -182,8 +181,8 @@ export const teamMembers: Member[] = [
     bio: "Versátil em plataformas cruzadas, unindo web e mobile.",
     image: "/images/team/edilson-ricardo.jpg",
     imageStyle: {
-      objectPosition: 'center 10%',
-      transform: 'scale(1.0)'
+      objectPosition: 'center 25%',
+      transform: 'scale(1.3)'
     }
   },
   {
@@ -194,7 +193,7 @@ export const teamMembers: Member[] = [
     image: "/images/team/isidro-guimba.jpg",
     imageStyle: {
       objectPosition: 'center 25%',
-      transform: 'scale(2.3)'
+      transform: 'scale(1.3)'
     }
   },
   {
@@ -204,7 +203,7 @@ export const teamMembers: Member[] = [
     bio: "Focado na arquitetura geral e integração de sistemas.",
     image: "/images/team/shelton-crimildo.jpg",
     imageStyle: {
-      objectPosition: '-20% -50%',
+      objectPosition: '-20% -30%',
       transform: 'scale(1.5)'
     }
   }
