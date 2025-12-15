@@ -144,7 +144,7 @@ export const teamMembers: Member[] = [
     year: "3º Ano",
     role: "Redes / Infraestrutura",
     bio: "Garante que nossas soluções estejam sempre conectadas e seguras.",
-    image: "/images/team/aquilivio-maria.jpg",
+    image: "/images/team/aquiliviomaria.jpg",
   },
   
   {
@@ -152,14 +152,14 @@ export const teamMembers: Member[] = [
     year: "2º Ano",
     role: "Back-end",
     bio: "O motor por trás das nossas aplicações, lidando com dados complexos.",
-    image: "/images/team/Edson-Crimildo-Guambe.jpg",
+    image: "/images/team/EdsonGuambe.jpg",
   },
   {
     name: "Edilson Ricardo Cuamba",
     year: "2º Ano",
     role: "Mobile / Web",
     bio: "Versátil em plataformas cruzadas, unindo web e mobile.",
-    image: "/images/team/edilson-ricardo-cuamba.jpg",
+    image: "/images/team/edilsoncuamba.jpg",
   },
   {
     name: "Isidro Helder Guiamba",
