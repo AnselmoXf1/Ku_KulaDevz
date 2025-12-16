@@ -225,7 +225,8 @@ export const projects: Project[] = [
     description: "Plataforma que conecta trabalhadores autônomos a oportunidades de emprego, facilitando a empregabilidade em Moçambique.",
     tags: ["Marketplace", "Web", "Social"],
     image: "/images/solutions/moz-services.jpg",
-    featured: true
+    featured: true,
+    url: "https://github.com/AnselmoXf1/moz-seevices--proto.git"
   }
 ];
 
