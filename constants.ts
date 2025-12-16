@@ -20,7 +20,7 @@ export const translations: Record<string, Translation> = {
     },
     about: {
       title: 'Quem Somos',
-      description: 'A Ku Kula Devz é um grupo de estudantes da UMUM dedicado a desenvolver soluções digitais inovadoras para problemas reais em Moçambique.',
+      description: 'A Ku_KulaDevz é um grupo de estudantes da UMUM dedicado a desenvolver soluções digitais inovadoras para problemas reais em Moçambique.',
       mission: 'Desenvolver tecnologia acessível e impactante.',
       vision: 'Ser referência em inovação tecnológica universitária em Moçambique.',
       values: 'Inovação, Colaboração, Impacto Social, Excelência.',
@@ -77,7 +77,7 @@ export const translations: Record<string, Translation> = {
     },
     about: {
       title: 'About Us',
-      description: 'Ku Kula Devz is a group of UMUM students dedicated to developing innovative digital solutions for real-world problems in Mozambique.',
+      description: 'Ku_KulaDevz is a group of UMUM students dedicated to developing innovative digital solutions for real-world problems in Mozambique.',
       mission: 'Develop accessible and impactful technology.',
       vision: 'To be a reference in university technological innovation in Mozambique.',
       values: 'Innovation, Collaboration, Social Impact, Excellence.',

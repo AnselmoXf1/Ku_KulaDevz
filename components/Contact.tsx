@@ -82,7 +82,7 @@ const Contact: React.FC<ContactProps> = ({ t }) => {
             name: 'Ativação Automática',
             email: 'sistema@kukuladevz.com',
             message: 'Ativação automática do FormSubmit para o sistema de contato.',
-            _subject: 'Ativação FormSubmit - Ku Kula Devz'
+            _subject: 'Ativação FormSubmit - Ku_KulaDevz'
           })
         });
         
@@ -179,7 +179,7 @@ const Contact: React.FC<ContactProps> = ({ t }) => {
             {t.title}
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Tem uma ideia, um projeto ou quer fazer parte da Ku Kula Devz? 
+            Tem uma ideia, um projeto ou quer fazer parte da Ku_KulaDevz? 
             Entre em contato conosco. Estamos prontos para inovar juntos.
           </p>
           <div className="w-24 h-1 bg-brand-green mx-auto mt-8 rounded-full"></div>
@@ -393,13 +393,13 @@ const Contact: React.FC<ContactProps> = ({ t }) => {
               <Terminal className="text-brand-green w-5 h-5" />
             </div>
             <div>
-              <span className="text-gray-900 font-bold text-lg tracking-wider">KU KULA DEVZ</span>
+              <span className="text-gray-900 font-bold text-lg tracking-wider">KU_KULADEVZ</span>
               <p className="text-xs text-gray-500 uppercase tracking-widest">Digital Solutions</p>
             </div>
           </div>
           
           <p className="text-gray-500 text-sm">
-            &copy; {new Date().getFullYear()} Ku Kula Devz. Todos os direitos reservados.
+            &copy; {new Date().getFullYear()} Ku_KulaDevz. Todos os direitos reservados.
           </p>
           
           <div className="flex gap-6">

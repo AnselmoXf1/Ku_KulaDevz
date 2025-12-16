@@ -30,7 +30,7 @@ const Hero: React.FC<HeroProps> = ({ t }) => {
           transition={{ duration: 0.8 }}
           className="inline-block mb-6 px-6 py-2 rounded-full border border-brand-green/30 bg-brand-green/10 text-brand-green text-sm font-mono shadow-lg"
         >
-          Ku Kula Devz
+          Ku_KulaDevz
         </motion.div>
 
         <motion.h1
