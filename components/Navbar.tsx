@@ -43,7 +43,7 @@ import React, { useState, useEffect } from 'react';
                   <Terminal className="text-brand-green w-6 h-6" />
                 </div>
                 <div className="flex flex-col">
-                    <span className="font-mono font-bold text-gray-900 text-lg tracking-wider">KU KULA <span className="text-brand-green">DEVZ</span></span>
+                    <span className="font-mono font-bold text-gray-900 text-lg tracking-wider">KU_KULA<span className="text-brand-green">DEVZ</span></span>
                     <span className="text-[10px] text-gray-500 uppercase tracking-widest hidden sm:block">Digital Solutions</span>
                 </div>
               </div>
