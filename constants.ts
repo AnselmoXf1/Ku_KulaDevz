@@ -121,7 +121,7 @@ export const teamMembers: Member[] = [
   {
     name: "Anselmo Dora Bistiro",
     year: "2º Ano",
-    role: "Programador Sênior / Segurança / Web",
+    role: "Programador Full Stack",
     bio: "Especialista em segurança da informação e arquitetura web robusta.",
     image: "/images/team/anselmoDora.webp",
     linkedin: "https://mz.linkedin.com/in/anselmo-dora-bistiro-gulane-a68505390",
