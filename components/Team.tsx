@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Instagram, Linkedin, X } from 'lucide-react';
+import { Instagram, Linkedin, X, User } from 'lucide-react';
 import { Translation, Member } from '../types';
 
 interface TeamProps {
@@ -14,12 +14,15 @@ const Team: React.FC<TeamProps> = ({ t, members }) => {
 
   const handleSocialClick = (url: string | undefined, platform: string, memberName: string) => {
     if (!url || url === "#") {
-      setModalMessage(`${memberName} ainda não adicionou o link do ${platform}. Em breve estará disponível!`);
+      const platformText = platform === "Portfólio" ? "portfólio" : platform;
+      setModalMessage(`${memberName} ainda não disponibilizou seu ${platformText}. Em breve estará disponível!`);
       setShowModal(true);
       return false;
     }
     return true;
   };
+
+
 
   return (
     <section id="team" className="py-20 bg-gray-50">
@@ -97,6 +100,20 @@ const Team: React.FC<TeamProps> = ({ t, members }) => {
                     className="text-gray-400 hover:text-brand-green transition-colors cursor-pointer"
                   >
                     <Instagram size={18} />
+                  </a>
+                  <a 
+                    href={member.portfolio || "#"} 
+                    target={member.portfolio ? "_blank" : "_self"}
+                    rel={member.portfolio ? "noopener noreferrer" : ""}
+                    onClick={(e) => {
+                      if (!handleSocialClick(member.portfolio, "Portfólio", member.name)) {
+                        e.preventDefault();
+                      }
+                    }}
+                    className="text-gray-400 hover:text-brand-green transition-colors cursor-pointer"
+                    title="Ver Portfólio"
+                  >
+                    <User size={18} />
                   </a>
                 </div>
               </div>

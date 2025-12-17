@@ -64,8 +64,10 @@ export interface Member {
   role: string;
   bio: string;
   image: string;
+  rating: number; // Avaliação de 1-5 estrelas
   linkedin?: string;
   instagram?: string;
+  portfolio?: string;
   imageStyle?: {
     objectPosition?: string;
     transform?: string;

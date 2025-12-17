@@ -14,13 +14,13 @@ export const translations: Record<string, Translation> = {
     },
     hero: {
       title: 'Tecnologia que transforma',
-      subtitle: 'Grupo de estudantes de Engenharia Informática & Tecnologia da UMUM desenvolvendo soluções reais para Moçambique.',
+      subtitle: 'Grupo de estudantes de Engenharia Informática & Tecnologia desenvolvendo soluções reais para Moçambique.',
       ctaPrimary: 'Ver Projetos',
       ctaSecondary: 'Conhecer a Equipa',
     },
     about: {
       title: 'Quem Somos',
-      description: 'A Ku_KulaDevz é um grupo de estudantes da UMUM dedicado a desenvolver soluções digitais inovadoras para problemas reais em Moçambique.',
+      description: 'A Ku_KulaDevz é um grupo de estudantes dedicado a desenvolver soluções digitais inovadoras para problemas reais em Moçambique.',
       mission: 'Desenvolver tecnologia acessível e impactante.',
       vision: 'Ser referência em inovação tecnológica universitária em Moçambique.',
       values: 'Inovação, Colaboração, Impacto Social, Excelência.',
@@ -71,13 +71,13 @@ export const translations: Record<string, Translation> = {
     },
     hero: {
       title: 'Technology that transforms',
-      subtitle: 'A group of Computer Engineering & Technology students from UMUM developing real solutions for Mozambique.',
+      subtitle: 'A group of Computer Engineering & Technology students developing real solutions for Mozambique.',
       ctaPrimary: 'View Projects',
       ctaSecondary: 'Meet the Team',
     },
     about: {
       title: 'About Us',
-      description: 'Ku_KulaDevz is a group of UMUM students dedicated to developing innovative digital solutions for real-world problems in Mozambique.',
+      description: 'Ku_KulaDevz is a group of students dedicated to developing innovative digital solutions for real-world problems in Mozambique.',
       mission: 'Develop accessible and impactful technology.',
       vision: 'To be a reference in university technological innovation in Mozambique.',
       values: 'Innovation, Collaboration, Social Impact, Excellence.',
@@ -124,8 +124,10 @@ export const teamMembers: Member[] = [
     role: "Programador Full Stack",
     bio: "Especialista em segurança da informação e arquitetura web robusta.",
     image: "/images/team/anselmoDora.webp",
+    rating: 5,
     linkedin: "https://mz.linkedin.com/in/anselmo-dora-bistiro-gulane-a68505390",
     instagram: "https://www.instagram.com/anselmo.offcial_/",
+    portfolio: "https://anselmo-dora-bistiro.vercel.app/",
     imageStyle: {
       objectPosition: 'center 35%',
       transform: 'scale(1.2)'
@@ -137,6 +139,7 @@ export const teamMembers: Member[] = [
     role: "Desenvolvimento Web",
     bio: "Focado em criar experiências web modernas e responsivas.",
     image: "/images/team/andre-augusto.webp",
+    rating: 4,
     imageStyle: {
       objectPosition: 'center -40%',
       transform: 'scale(1.5)'
@@ -148,6 +151,7 @@ export const teamMembers: Member[] = [
     role: "Front-end / Mobile",
     bio: "Paixão por UI/UX e desenvolvimento de aplicações móveis intuitivas.",
     image: "/images/team/anselma-tiburcio.webp",
+    rating: 5,
     linkedin: "https://mz.linkedin.com/in/anselma-tiburcio-73165930b",
     instagram: "https://www.instagram.com/anselmatiburcio/",
     imageStyle: {
@@ -161,8 +165,10 @@ export const teamMembers: Member[] = [
     role: "Redes / Infraestrutura",
     bio: "Garante que nossas soluções estejam sempre conectadas e seguras.",
     image: "/images/team/aquiliviomaria.webp",
+    rating: 4,
     linkedin: "https://linkedin.com/in/aquilivio-maria",
-    instagram: "https://instagram.com/aquilivio.maria"
+    instagram: "https://instagram.com/aquilivio.maria",
+    portfolio: "https://aquiliviomaria.vercel.app/"
   },
   
   {
@@ -171,6 +177,7 @@ export const teamMembers: Member[] = [
     role: "Back-end",
     bio: "O motor por trás das nossas aplicações, lidando com dados complexos.",
     image: "/images/team/edsonGuambe.webp",
+    rating: 4,
     linkedin: "https://linkedin.com/in/edson-crimilido",
     instagram: "https://instagram.com/edson.crimilido",
   },
@@ -180,6 +187,7 @@ export const teamMembers: Member[] = [
     role: "Mobile / Web",
     bio: "Versátil em plataformas cruzadas, unindo web e mobile.",
     image: "/images/team/edilson-ricardo.webp",
+    rating: 4,
     imageStyle: {
       objectPosition: 'center 25%',
       transform: 'scale(1.3)'
@@ -191,6 +199,8 @@ export const teamMembers: Member[] = [
     role: "Algoritmos / Lógica",
     bio: "Resolve problemas complexos com lógica eficiente e limpa.",
     image: "/images/team/isidro-guimba.webp",
+    rating: 5,
+    portfolio: "https://kinho-dev.vercel.app/",
     imageStyle: {
       objectPosition: 'center 25%',
       transform: 'scale(1.3)'
@@ -202,6 +212,7 @@ export const teamMembers: Member[] = [
     role: "Desenvolvimento de Sistemas",
     bio: "Focado na arquitetura geral e integração de sistemas.",
     image: "/images/team/shelton-crimildo.webp",
+    rating: 4,
     imageStyle: {
       objectPosition: '-20% -30%',
       transform: 'scale(1.5)'
