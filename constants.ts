@@ -14,7 +14,7 @@ export const translations: Record<string, Translation> = {
     },
     hero: {
       title: 'A excelência não é uma opção, é o nosso padrão',
-      subtitle: 'Grupo de estudantes de Engenharia Informática & Tecnologia desenvolvendo soluções reais para Moçambique.',
+      subtitle: 'Desenvolvendo soluções digitais inovadoras para problemas reais em Moçambique.',
       ctaPrimary: 'Ver Projetos',
       ctaSecondary: 'Conhecer a Equipa',
     },
@@ -71,7 +71,7 @@ export const translations: Record<string, Translation> = {
     },
     hero: {
       title: 'Excellence is not an option, it is our standard',
-      subtitle: 'A group of Computer Engineering & Technology students developing real solutions for Mozambique.',
+      subtitle: 'Developing innovative digital solutions for real-world problems in Mozambique.',
       ctaPrimary: 'View Projects',
       ctaSecondary: 'Meet the Team',
     },
@@ -256,6 +256,14 @@ export const partners: Partner[] = [
     description: "Organização que promove a participação cidadã e colabora em projetos de impacto social.",
     logo: "/images/partners/movimento-cidadania-logo.png",
     website: "https://mpcidadania.org.mz/",
+    type: "partner"
+  },
+  {
+    id: "jovem-criativo",
+    name: "Prémio Jovem Criativo",
+    description: "Programa que reconhece e apoia jovens inovadores em Moçambique através de iniciativas criativas e tecnológicas.",
+    logo: "/images/partners/jovem-criativo.jpg",
+    website: "https://portaldogoverno.gov.mz/ministerios/ministerio-da-juventude-e-desportos/",
     type: "partner"
   }
 ];

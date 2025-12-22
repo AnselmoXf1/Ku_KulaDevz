@@ -46,7 +46,6 @@ import React, { useState, useEffect } from 'react';
         { href: '#solutions', label: t.projects, icon: Lightbulb, id: 'solutions' },
         { href: '#team', label: t.team, icon: Users, id: 'team' },
         { href: '#partners', label: t.partners, icon: Handshake, id: 'partners' },
-        { href: '#sponsors', label: t.sponsors, icon: Heart, id: 'sponsors' },
         { href: '#contact', label: t.contact, icon: Mail, id: 'contact' },
       ];
 

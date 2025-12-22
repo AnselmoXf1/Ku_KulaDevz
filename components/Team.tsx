@@ -69,7 +69,6 @@ const Team: React.FC<TeamProps> = ({ t, members }) => {
 
               <div className="text-center">
                 <h3 className="text-gray-900 font-bold text-lg mb-1">{member.name}</h3>
-                <p className="text-brand-green text-xs font-mono mb-2">{member.year}</p>
                 <div className="h-px w-full bg-gray-200 my-3"></div>
                 <p className="text-gray-700 text-sm font-medium mb-2 min-h-[40px]">{member.role}</p>
                 <p className="text-gray-500 text-xs mb-4 line-clamp-2">{member.bio}</p>

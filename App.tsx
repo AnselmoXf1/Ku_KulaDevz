@@ -5,7 +5,6 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Team from './components/Team';
 import Partners from './components/Partners';
-import Sponsors from './components/Sponsors';
 import Events from './components/Events';
 import Reviews from './components/Reviews';
 import Contact from './components/Contact';
@@ -26,7 +25,6 @@ const App: React.FC = () => {
         <Projects t={t.projects} projects={projects} />
         <Team t={t.team} members={teamMembers} />
         <Partners t={t.partners} partners={partners} />
-        <Sponsors t={t.sponsors} sponsors={partners} />
         <Events t={t.events} />
         <Reviews />
         <Contact t={t.contact} />

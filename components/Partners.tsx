@@ -9,7 +9,8 @@ interface PartnersProps {
 }
 
 const Partners: React.FC<PartnersProps> = ({ t, partners }) => {
-  const partnersList = partners.filter(p => p.type === 'partner');
+  // Incluir todos os parceiros (tanto partners quanto sponsors)
+  const allPartners = partners;
   
   return (
     <section id="partners" className="py-24 bg-white relative overflow-hidden">
@@ -21,16 +22,16 @@ const Partners: React.FC<PartnersProps> = ({ t, partners }) => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-5xl font-bold text-black mb-4">
-            {t.title}
+            Parceiros e Patrocinadores
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto mb-8">
-            {t.description}
+            Parceiros e patrocinadores que nos apoiam na organização de eventos, workshops e projetos que ajudam a impulsionar o desenvolvimento da comunidade.
           </p>
           <div className="w-24 h-1 bg-brand-green mx-auto rounded-full"></div>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {partnersList.map((partner, index) => (
+          {allPartners.map((partner, index) => (
             <motion.div
               key={partner.id}
               initial={{ opacity: 0, y: 30 }}
