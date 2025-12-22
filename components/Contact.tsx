@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Mail, MessageSquare, MapPin, Terminal, Phone, Send, Instagram, Linkedin, Github, CheckCircle, AlertCircle, Youtube } from 'lucide-react';
 import { Translation } from '../types';
 import { EMAIL_CONFIG, formatEmailBody, createMailtoLink, createHTMLEmailTemplate, createAdvancedHTMLTemplate } from '../config/email';
+import { analytics } from '../utils/analytics';
 
 interface ContactProps {
   t: Translation['contact'];
@@ -28,6 +29,14 @@ const Contact: React.FC<ContactProps> = ({ t }) => {
   };
 
   const sendEmail = async (formData: typeof formData) => {
+    // Registrar mensagem no analytics local
+    const messageId = analytics.trackMessage({
+      name: formData.name,
+      email: formData.email,
+      subject: formData.subject,
+      message: formData.message
+    });
+
     const mailtoLink = createMailtoLink(formData);
     
     // Tentar enviar via FormSubmit (serviço gratuito de formulários)
