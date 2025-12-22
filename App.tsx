@@ -17,10 +17,10 @@ const App: React.FC = () => {
   const t = translations[lang];
 
   return (
-    <div className="min-h-screen bg-white font-sans selection:bg-brand-green selection:text-white">
+    <div className="min-h-screen bg-white font-sans selection:bg-brand-green selection:text-white overflow-x-hidden max-w-full">
       <Navbar lang={lang} setLang={setLang} t={t.nav} />
       
-      <main>
+      <main className="overflow-x-hidden max-w-full">
         <Hero t={t.hero} />
         <About t={t.about} stats={t.stats} />
         <Projects t={t.projects} projects={projects} />

@@ -52,12 +52,12 @@ import React, { useState, useEffect } from 'react';
 
       return (
         <nav
-          className={`fixed w-full z-50 transition-all duration-300 ${
+          className={`fixed w-full z-50 transition-all duration-300 overflow-hidden ${
             scrolled ? 'bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-sm' : 'bg-transparent'
           }`}
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex items-center justify-between h-20">
+            <div className="flex items-center justify-between h-20 w-full">
               {/* Logo */}
               <div className="flex-shrink-0 flex items-center gap-3 cursor-pointer" onClick={() => window.scrollTo(0,0)}>
                 <div className={`relative transition-all duration-300 ${scrolled ? 'w-14 h-14' : 'w-11 h-11'}`}>
@@ -134,7 +134,7 @@ import React, { useState, useEffect } from 'react';
               </div>
 
               {/* Mobile menu button */}
-              <div className="md:hidden">
+              <div className="md:hidden flex-shrink-0">
                 <motion.button
                   onClick={() => setIsOpen(!isOpen)}
                   whileTap={{ scale: 0.95 }}
@@ -172,9 +172,9 @@ import React, { useState, useEffect } from 'react';
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -20 }}
                 transition={{ duration: 0.3, ease: "easeOut" }}
-                className="md:hidden bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-2xl relative z-50"
+                className="md:hidden bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-2xl relative z-50 w-full overflow-hidden"
               >
-                <div className="px-4 pt-4 pb-6 space-y-2">
+                <div className="px-4 pt-4 pb-6 space-y-2 max-w-full">
                   {navLinks.map((link, index) => {
                     const IconComponent = link.icon;
                     const isActive = activeSection === link.id;
