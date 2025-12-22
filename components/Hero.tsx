@@ -35,9 +35,21 @@ const Hero: React.FC<HeroProps> = ({ t }) => {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight"
             >
-              A excelência não é uma{' '}
-              <span className="text-brand-green">opção</span>,<br />
-              é o nosso <span className="text-brand-green">padrão</span>
+              {t.title.split(',').map((part, index) => (
+                <span key={index}>
+                  {index === 0 ? (
+                    <>
+                      {part.split(' ').slice(0, -1).join(' ')}{' '}
+                      <span className="text-brand-green">{part.split(' ').slice(-1)}</span>,<br />
+                    </>
+                  ) : (
+                    <>
+                      {part.trim().split(' ').slice(0, -1).join(' ')}{' '}
+                      <span className="text-brand-green">{part.trim().split(' ').slice(-1)}</span>
+                    </>
+                  )}
+                </span>
+              ))}
             </motion.h1>
 
             {/* Subtitle */}
