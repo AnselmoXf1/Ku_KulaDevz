@@ -13,7 +13,7 @@ export const translations: Record<string, Translation> = {
       contact: 'Contato',
     },
     hero: {
-      title: 'Tecnologia que transforma',
+      title: 'A excelência não é uma opção, é o nosso padrão',
       subtitle: 'Grupo de estudantes de Engenharia Informática & Tecnologia desenvolvendo soluções reais para Moçambique.',
       ctaPrimary: 'Ver Projetos',
       ctaSecondary: 'Conhecer a Equipa',
@@ -70,7 +70,7 @@ export const translations: Record<string, Translation> = {
       contact: 'Contact',
     },
     hero: {
-      title: 'Technology that transforms',
+      title: 'Excellence is not an option, it is our standard',
       subtitle: 'A group of Computer Engineering & Technology students developing real solutions for Mozambique.',
       ctaPrimary: 'View Projects',
       ctaSecondary: 'Meet the Team',
@@ -119,7 +119,7 @@ export const translations: Record<string, Translation> = {
 
 export const teamMembers: Member[] = [
   {
-    name: "Anselmo Dora Bistiro",
+    name: "Anselmo Dora Bistiro Gulane",
     year: "2º Ano",
     role: "Programador Full Stack",
     bio: "Especialista em segurança da informação e arquitetura web robusta.",
@@ -136,8 +136,8 @@ export const teamMembers: Member[] = [
   {
     name: "André Augusto Júnior",
     year: "2º Ano",
-    role: "Desenvolvimento Web",
-    bio: "Focado em criar experiências web modernas e responsivas.",
+    role: "Backend",
+    bio: "Especialista em desenvolvimento de servidores e APIs robustas.",
     image: "/images/team/andre-augusto.webp",
     rating: 4,
     imageStyle: {
@@ -162,8 +162,8 @@ export const teamMembers: Member[] = [
   {
     name: "Aquilivio Maria",
     year: "3º Ano",
-    role: "Redes / Infraestrutura",
-    bio: "Garante que nossas soluções estejam sempre conectadas e seguras.",
+    role: "DevOps",
+    bio: "Especialista em infraestrutura, deploy e automação de processos.",
     image: "/images/team/aquiliviomaria.webp",
     rating: 4,
     linkedin: "https://linkedin.com/in/aquilivio-maria",
@@ -184,8 +184,8 @@ export const teamMembers: Member[] = [
   {
     name: "Edilson Ricardo Cuamba",
     year: "2º Ano",
-    role: "Mobile / Web",
-    bio: "Versátil em plataformas cruzadas, unindo web e mobile.",
+    role: "Frontend",
+    bio: "Focado em criar interfaces modernas e experiências web responsivas.",
     image: "/images/team/edilson-ricardo.webp",
     rating: 4,
     imageStyle: {
@@ -196,8 +196,8 @@ export const teamMembers: Member[] = [
   {
     name: "Isidro Helder Guiamba",
     year: "2º Ano",
-    role: "Algoritmos / Lógica",
-    bio: "Resolve problemas complexos com lógica eficiente e limpa.",
+    role: "Frontend / UI/UX",
+    bio: "Especialista em interfaces de usuário e experiência do usuário intuitiva.",
     image: "/images/team/isidro-guimba.webp",
     rating: 5,
     portfolio: "https://kinho-dev.vercel.app/",
@@ -209,8 +209,8 @@ export const teamMembers: Member[] = [
   {
     name: "Shelton Tomas",
     year: "2º Ano",
-    role: "Desenvolvimento de Sistemas",
-    bio: "Focado na arquitetura geral e integração de sistemas.",
+    role: "Frontend / Designer",
+    bio: "Especialista em design de interfaces e desenvolvimento frontend criativo.",
     image: "/images/team/shelton-crimildo.webp",
     rating: 4,
     imageStyle: {
@@ -245,7 +245,7 @@ export const partners: Partner[] = [
   {
     id: "umum",
     name: "Universidade Metodista Unida de Moçambique",
-    description: "Nossa universidade parceira que nos apoia no desenvolvimento académico e fornece recursos para nossos projetos de tecnologia e inovação.",
+    description: "Universidade que nos apoia no desenvolvimento académico e fornece recursos para nossos projetos.",
     logo: "/images/partners/umum-logo.png",
     website: "https://umum.ac.mz",
     type: "partner"
@@ -253,7 +253,7 @@ export const partners: Partner[] = [
   {
     id: "movimento-cidadania",
     name: "Movimento pela Cidadania",
-    description: "Organização que promove a participação cidadã e o desenvolvimento social em Moçambique, colaborando em projetos de impacto comunitário.",
+    description: "Organização que promove a participação cidadã e colabora em projetos de impacto social.",
     logo: "/images/partners/movimento-cidadania-logo.png",
     website: "https://mpcidadania.org.mz/",
     type: "partner"

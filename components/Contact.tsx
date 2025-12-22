@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, MessageSquare, MapPin, Terminal, Phone, Send, Instagram, Linkedin, Github, CheckCircle, AlertCircle } from 'lucide-react';
+import { Mail, MessageSquare, MapPin, Terminal, Phone, Send, Instagram, Linkedin, Github, CheckCircle, AlertCircle, Youtube } from 'lucide-react';
 import { Translation } from '../types';
 import { EMAIL_CONFIG, formatEmailBody, createMailtoLink, createHTMLEmailTemplate, createAdvancedHTMLTemplate } from '../config/email';
 
@@ -233,7 +233,7 @@ const Contact: React.FC<ContactProps> = ({ t }) => {
                   </div>
                   <div>
                     <p className="text-sm text-gray-500 font-medium">Localização</p>
-                    <p className="text-gray-900 font-semibold">UMUM - Morrumbene, Inhambane</p>
+                    <p className="text-gray-900 font-semibold">Morrumbene, Inhambane</p>
                   </div>
                 </motion.div>
               </div>
@@ -245,26 +245,46 @@ const Contact: React.FC<ContactProps> = ({ t }) => {
                   <motion.a
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
-                    href="#"
+                    href="https://www.instagram.com/ku_kuladevz?igsh=bmR6bW5mejdmanpn"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="w-10 h-10 rounded-xl bg-gray-100 hover:bg-brand-green flex items-center justify-center text-gray-600 hover:text-white transition-all duration-200"
+                    title="Instagram"
                   >
                     <Instagram size={18} />
                   </motion.a>
                   <motion.a
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
-                    href="#"
+                    href="https://youtube.com/@kukuladevz?si=EkYSvkbQGcpm9y61"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="w-10 h-10 rounded-xl bg-gray-100 hover:bg-brand-green flex items-center justify-center text-gray-600 hover:text-white transition-all duration-200"
+                    title="YouTube"
                   >
-                    <Linkedin size={18} />
+                    <Youtube size={18} />
                   </motion.a>
                   <motion.a
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
-                    href="#"
+                    href="https://vm.tiktok.com/ZMHKeWGT4/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="w-10 h-10 rounded-xl bg-gray-100 hover:bg-brand-green flex items-center justify-center text-gray-600 hover:text-white transition-all duration-200"
+                    title="TikTok"
                   >
-                    <Github size={18} />
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                    </svg>
+                  </motion.a>
+                  <motion.a
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.95 }}
+                    href="mailto:kukuladevz.team@gmail.com"
+                    className="w-10 h-10 rounded-xl bg-gray-100 hover:bg-brand-green flex items-center justify-center text-gray-600 hover:text-white transition-all duration-200"
+                    title="Email"
+                  >
+                    <Mail size={18} />
                   </motion.a>
                 </div>
               </div>
@@ -389,8 +409,19 @@ const Contact: React.FC<ContactProps> = ({ t }) => {
           className="border-t border-gray-200 pt-12 flex flex-col md:flex-row justify-between items-center gap-6"
         >
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-brand-green/10 rounded-2xl flex items-center justify-center">
-              <Terminal className="text-brand-green w-5 h-5" />
+            <div className="relative w-10 h-10">
+              <div className="absolute inset-0 bg-brand-green/20 rounded-full blur-sm"></div>
+              <div className="w-full h-full rounded-full overflow-hidden relative z-10 bg-white p-1">
+                <img 
+                  src="/images/IMG-20251218-WA0045.jpg" 
+                  alt="Ku_KulaDevz Logo" 
+                  className="w-full h-full object-cover"
+                  style={{
+                    transform: 'scale(1.3)',
+                    objectPosition: 'center center'
+                  }}
+                />
+              </div>
             </div>
             <div>
               <span className="text-gray-900 font-bold text-lg tracking-wider">KU_KULADEVZ</span>
