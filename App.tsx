@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
+import Services from './components/Services';
 import Projects from './components/Projects';
 import Team from './components/Team';
 import Partners from './components/Partners';
 import Events from './components/Events';
-import Reviews from './components/Reviews';
 import Contact from './components/Contact';
 import AdminPanel from './components/AdminPanel';
 import { translations, teamMembers, projects, partners } from './constants';
@@ -52,11 +52,11 @@ const App: React.FC = () => {
       <main className="overflow-x-hidden max-w-full">
         <Hero t={t.hero} />
         <About t={t.about} stats={t.stats} />
+        <Services t={t.services} />
         <Projects t={t.projects} projects={projects} />
         <Team t={t.team} members={teamMembers} />
         <Partners t={t.partners} partners={partners} />
         <Events t={t.events} />
-        <Reviews />
         <Contact t={t.contact} />
       </main>
     </div>

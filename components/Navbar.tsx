@@ -19,7 +19,7 @@ import React, { useState, useEffect } from 'react';
           setScrolled(window.scrollY > 50);
           
           // Detect active section
-          const sections = ['home', 'about', 'solutions', 'team', 'partners', 'sponsors', 'contact'];
+          const sections = ['home', 'about', 'services', 'solutions', 'team', 'partners', 'contact'];
           const scrollPosition = window.scrollY + 100;
           
           for (const section of sections) {
@@ -43,6 +43,7 @@ import React, { useState, useEffect } from 'react';
       const navLinks = [
         { href: '#home', label: t.home, icon: Home, id: 'home' },
         { href: '#about', label: t.about, icon: Info, id: 'about' },
+        { href: '#services', label: t.services, icon: Lightbulb, id: 'services' },
         { href: '#solutions', label: t.projects, icon: Lightbulb, id: 'solutions' },
         { href: '#team', label: t.team, icon: Users, id: 'team' },
         { href: '#partners', label: t.partners, icon: Handshake, id: 'partners' },
@@ -58,8 +59,8 @@ import React, { useState, useEffect } from 'react';
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-between h-20 w-full">
               {/* Logo */}
-              <div className="flex-shrink-0 flex items-center gap-3 cursor-pointer" onClick={() => window.scrollTo(0,0)}>
-                <div className={`relative transition-all duration-300 ${scrolled ? 'w-14 h-14' : 'w-11 h-11'}`}>
+              <div className="flex-shrink-0 flex items-center gap-3 cursor-pointer -mt-4" onClick={() => window.scrollTo(0,0)}>
+                <div className={`relative transition-all duration-300 ${scrolled ? 'w-16 h-16' : 'w-14 h-14'}`}>
                   <div className={`absolute inset-0 rounded-full blur-sm transition-all duration-300 ${scrolled ? '' : 'bg-brand-green/20'}`}></div>
                   <div className={`w-full h-full rounded-full overflow-hidden relative z-10 bg-white shadow-lg transition-all duration-300 ${scrolled ? 'shadow-md' : 'shadow-md'}`}>
                     <img 
@@ -67,8 +68,8 @@ import React, { useState, useEffect } from 'react';
                       alt="Ku_KulaDevz Logo" 
                       className="w-full h-full object-cover"
                       style={{
-                        transform: 'scale(1.2)',
-                        objectPosition: 'center center'
+                        transform: 'scale(1.7)',
+                        objectPosition: 'center 10px'
                       }}
                     />
                   </div>

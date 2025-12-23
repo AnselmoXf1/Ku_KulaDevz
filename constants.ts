@@ -5,11 +5,11 @@ export const translations: Record<string, Translation> = {
     nav: {
       home: 'Início',
       about: 'Quem Somos',
+      services: 'Serviços',
       projects: 'Soluções',
       team: 'Equipa',
-      events: 'Eventos',
+      events: 'Eventos & Premiações',
       partners: 'Parceiros',
-      sponsors: 'Patrocinadores',
       contact: 'Contato',
     },
     hero: {
@@ -29,6 +29,10 @@ export const translations: Record<string, Translation> = {
       title: 'Nossas Soluções',
       viewDetails: 'Ver Detalhes',
     },
+    services: {
+      title: 'Serviços Digitais',
+      subtitle: 'Soluções tecnológicas completas para impulsionar seu negócio no mundo digital.',
+    },
     partners: {
       title: 'Nossos Parceiros',
       description: 'Organizações que colaboram connosco para criar impacto positivo.',
@@ -47,7 +51,7 @@ export const translations: Record<string, Translation> = {
       role: 'Função',
     },
     events: {
-      title: 'Galeria & Eventos',
+      title: 'Eventos & Premiações',
     },
     contact: {
       title: 'Fale Conosco',
@@ -62,11 +66,11 @@ export const translations: Record<string, Translation> = {
     nav: {
       home: 'Home',
       about: 'About Us',
+      services: 'Services',
       projects: 'Solutions',
       team: 'Team',
-      events: 'Events',
+      events: 'Events & Awards',
       partners: 'Partners',
-      sponsors: 'Sponsors',
       contact: 'Contact',
     },
     hero: {
@@ -86,6 +90,10 @@ export const translations: Record<string, Translation> = {
       title: 'Our Solutions',
       viewDetails: 'View Details',
     },
+    services: {
+      title: 'Digital Services',
+      subtitle: 'Complete technological solutions to boost your business in the digital world.',
+    },
     partners: {
       title: 'Our Partners',
       description: 'Organizations that collaborate with us to create positive impact.',
@@ -104,7 +112,7 @@ export const translations: Record<string, Translation> = {
       role: 'Role',
     },
     events: {
-      title: 'Gallery & Events',
+      title: 'Events & Awards',
     },
     contact: {
       title: 'Contact Us',
@@ -129,8 +137,8 @@ export const teamMembers: Member[] = [
     instagram: "https://www.instagram.com/anselmo.offcial_/",
     portfolio: "https://anselmo-dora-bistiro.vercel.app/",
     imageStyle: {
-      objectPosition: 'center 35%',
-      transform: 'scale(1.2)'
+      objectPosition: 'center -40%',
+      transform: 'scale(2.0)'
     }
   },
   {
@@ -141,8 +149,8 @@ export const teamMembers: Member[] = [
     image: "/images/team/andre-augusto.webp",
     rating: 4,
     imageStyle: {
-      objectPosition: 'center -40%',
-      transform: 'scale(1.5)'
+      objectPosition: 'center -130%',
+      transform: 'scale(1.9)'
     }
   },
   {
@@ -203,7 +211,7 @@ export const teamMembers: Member[] = [
     portfolio: "https://kinho-dev.vercel.app/",
     imageStyle: {
       objectPosition: 'center 25%',
-      transform: 'scale(1.3)'
+      transform: 'scale(2.2)'
     }
   },
   {
@@ -214,8 +222,8 @@ export const teamMembers: Member[] = [
     image: "/images/team/shelton-crimildo.webp",
     rating: 4,
     imageStyle: {
-      objectPosition: '-20% -30%',
-      transform: 'scale(1.5)'
+      objectPosition: 'center -200%',
+      transform: 'scale(1.7)'
     }
   }
 ];

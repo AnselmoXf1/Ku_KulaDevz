@@ -24,16 +24,16 @@ const Hero: React.FC<HeroProps> = ({ t }) => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex items-center h-full px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 flex items-center h-full px-4 sm:px-6 lg:px-8 pt-20">
         <div className="max-w-7xl mx-auto w-full">
-          <div className="max-w-3xl">
+          <div className="max-w-2xl">
             
             {/* Main Headline */}
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight"
+              className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight mt-8"
             >
               {t.title.split(',').map((part, index) => (
                 <span key={index}>

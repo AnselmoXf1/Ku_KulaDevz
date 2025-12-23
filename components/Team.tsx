@@ -48,9 +48,8 @@ const Team: React.FC<TeamProps> = ({ t, members }) => {
               transition={{ delay: index * 0.05 }}
               className="bg-white rounded-xl p-8 border border-gray-200 hover:border-brand-green/50 transition-all duration-300 shadow-lg hover:shadow-xl group"
             >
-              <div className="relative w-32 h-32 mx-auto mb-6">
-                <div className="absolute inset-0 bg-brand-green/20 rounded-full blur-lg group-hover:bg-brand-green/40 transition-all"></div>
-                <div className="w-full h-full rounded-full overflow-hidden border-3 border-brand-green relative z-10 hover:scale-105 transition-transform duration-300">
+              <div className="relative w-40 h-48 mx-auto mb-6">
+                <div className="w-full h-full rounded-xl overflow-hidden border-2 border-gray-200 relative z-10 hover:scale-105 transition-transform duration-300">
                   <img
                     src={member.image}
                     alt={member.name}
@@ -70,10 +69,9 @@ const Team: React.FC<TeamProps> = ({ t, members }) => {
               <div className="text-center">
                 <h3 className="text-gray-900 font-bold text-lg mb-1">{member.name}</h3>
                 <div className="h-px w-full bg-gray-200 my-3"></div>
-                <p className="text-gray-700 text-sm font-medium mb-2 min-h-[40px]">{member.role}</p>
-                <p className="text-gray-500 text-xs mb-4 line-clamp-2">{member.bio}</p>
+                <p className="text-gray-700 text-sm font-medium">{member.role}</p>
                 
-                <div className="flex justify-center gap-3">
+                <div className="flex justify-center gap-3 mt-4">
                   <a 
                     href={member.linkedin || "#"} 
                     target={member.linkedin ? "_blank" : "_self"}
